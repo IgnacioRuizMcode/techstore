@@ -1,4 +1,4 @@
-#  TechStore - E-Commerce MERN Platform
+#  TechStore - E-Commerce  Platform
 
 ![React](https://img.shields.io/badge/React_18-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
