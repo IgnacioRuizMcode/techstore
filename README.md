@@ -40,28 +40,53 @@ TechStore es una plataforma de comercio electrónico integral y escalable, desar
 
 ---
 
-#  Funcionalidades Principales
+## Funcionalidades Principales
 
-- Registro de usuarios.
-- Inicio de sesión.
-- Recuperación de contraseña.
-- JWT Authentication.
-- Roles de usuario.
-- CRUD de productos.
-- CRUD de usuarios.
-- CRUD de cupones.
-- CRUD de pedidos.
-- Dashboard Administrativo.
-- Wishlist.
-- Carrito Persistente.
-- Historial de compras.
-- Seguimiento de pedidos.
-- Integración con Webpay.
-- Envío automático de correos.
-- Notificaciones en tiempo real.
-- Gestión de imágenes con Multer.
-- 
+- Autenticación de usuarios mediante JWT.
+- Registro, inicio de sesión y recuperación de contraseña.
+- Catálogo de productos con búsqueda, filtros y paginación.
+- Carrito de compras persistente y aplicación de cupones.
+- Integración de pagos con Transbank Webpay Plus.
+- Gestión de perfiles, direcciones y lista de deseos.
+- Historial y seguimiento de pedidos.
+- Panel administrativo con dashboard y métricas.
+- Administración completa (CRUD) de productos, usuarios, pedidos y cupones.
+- Gestión de inventario con control de stock y carga de imágenes mediante Multer.
+- Sistema de notificaciones y envío automático de correos electrónicos.
+- Rutas protegidas mediante control de roles y permisos.
 ---
+
+## Tecnologías
+
+### Frontend
+
+- React 18
+- Vite
+- React Router DOM
+- Context API
+- Axios
+- Tailwind CSS
+
+### Backend
+
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT
+- Bcrypt.js
+- Multer
+- Nodemailer
+- Transbank Webpay Plus REST API
+
+### Herramientas
+
+- Git & GitHub
+- Postman
+- npm
+
+---
+
 ##  Interfaz de Usuario y Flujos
 
 ### 1. Inicio y Catálogo de Productos
@@ -121,14 +146,10 @@ Crear un archivo **.env** dentro de la carpeta **server**.
 
 ```env
 PORT=5000
-
 MONGO_URI=tu_cadena_de_conexion
-
 JWT_SECRET=tu_secreto_seguro
-
-TBK_COMMERCE_CODE=597020000540
-
-TBK_API_KEY_SECRET=579B532A7440BB0C9079DED94D31EA1615BACEB56610332264630D42D0A36B1C
+TBK_COMMERCE_CODE=your_commerce_code
+TBK_API_KEY_SECRET=your_api_key
 ```
 
 ---
