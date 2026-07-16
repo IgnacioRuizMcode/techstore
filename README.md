@@ -89,9 +89,19 @@ TechStore es una plataforma de comercio electrónico integral y escalable, desar
 * [MongoDB](https://www.mongodb.com/) (Local o Atlas)
 
 ### 2. Clonar el repositorio
-```bash
 git clone [https://github.com/IgnacioRuizMcode/techstore.git](https://github.com/IgnacioRuizMcode/techstore.git)
 cd techstore 
 
 ### 3. Configuración de Variables de Entorno
 Crea un archivo .env dentro de la carpeta server/ con:
+PORT=5000
+MONGO_URI=tu_cadena_de_conexion
+JWT_SECRET=tu_secreto_seguro
+TBK_COMMERCE_CODE=597020000540
+TBK_API_KEY_SECRET=579B532A7440BB0C9079DED94D31EA1615BACEB56610332264630D42D0A36B1C
+
+### 4. Instalación de dependencias (Script Maestro)
+npm run install-all
+
+### 5. Ejecución del entorno de desarrollo
+npm run dev
