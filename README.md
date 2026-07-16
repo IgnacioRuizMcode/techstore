@@ -7,8 +7,7 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=white)
 
-TechStore es una plataforma de comercio electrónico integral y escalable, desarrollada desde cero utilizando la pila tecnológica **MERN**. Diseñada con un enfoque "Mobile-First" y arquitectura orientada a servicios, la aplicación ofrece una experiencia de usuario optimizada, pasarela de pagos integrada y un ecosistema de gestión administrativa completo.
-
+TechStore es una plataforma de comercio electrónico desarrollada con la pila tecnológica MERN (MongoDB, Express.js, React y Node.js). El proyecto implementa una arquitectura MVC en el backend, un enfoque Mobile First para la interfaz de usuario y una estructura modular orientada a la escalabilidad. Incluye autenticación segura, gestión de inventario, procesamiento de pagos mediante Transbank Webpay Plus, panel administrativo y un sistema completo de gestión de pedidos.
 ---
 
 ##  Propuesta de Valor y Características
