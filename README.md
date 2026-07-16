@@ -1,4 +1,4 @@
-# ⚡ TechStore - E-Commerce MERN Platform
+#  TechStore - E-Commerce MERN Platform
 
 ![React](https://img.shields.io/badge/React_18-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
@@ -11,9 +11,9 @@ TechStore es una plataforma de comercio electrónico integral y escalable, desar
 
 ---
 
-## 🚀 Propuesta de Valor y Características
+##  Propuesta de Valor y Características
 
-### 🛍️ Experiencia del Cliente (B2C)
+###  Experiencia del Cliente (B2C)
 * **Catálogo Dinámico:** Filtrado multi-criterio (categorías, marcas, rangos de precio), búsqueda en tiempo real y ordenamiento inteligente.
 * **Carrito de Compras Persistente:** Sincronización de estado global mediante Context API, cálculo de subtotales, IVA y motor de validación de cupones de descuento.
 * **Checkout Seguro:** Integración oficial de **Transbank Webpay Plus (REST API)** para procesamiento de pagos con tarjetas de crédito y débito.
@@ -22,7 +22,7 @@ TechStore es una plataforma de comercio electrónico integral y escalable, desar
   * Lista de deseos (Wishlist) y Centro de notificaciones.
   * Gestión de datos personales y direcciones de envío.
 
-### 🏢 Panel de Administración (B2B)
+###  Panel de Administración (B2B)
 * **Dashboard Estadístico:** KPIs en tiempo real, gráficos de ventas mensuales, ingresos totales y control de usuarios activos.
 * **Gestión de Inventario (CRUD):** Sistema completo para alta, edición y baja de productos, control de stock y subida de imágenes (multipart/form-data).
 * **Logística y Despacho:** Interfaz para el avance de estados de órdenes de compra (Pendiente -> Preparación -> Enviado -> Entregado).
@@ -31,7 +31,7 @@ TechStore es una plataforma de comercio electrónico integral y escalable, desar
 
 ---
 
-## 🛠️ Arquitectura y Stack Tecnológico
+##  Arquitectura y Stack Tecnológico
 
 ### Frontend (Client)
 * **Core:** React 18 (construido sobre Vite para HMR ultra rápido).
@@ -55,7 +55,7 @@ TechStore es una plataforma de comercio electrónico integral y escalable, desar
 
 ---
 
-## 📸 Interfaz de Usuario y Flujos
+##  Interfaz de Usuario y Flujos
 
 ### 1. Inicio y Catálogo de Productos
 | Landing Page | Categorías Dinámicas |
@@ -97,7 +97,7 @@ TechStore es una plataforma de comercio electrónico integral y escalable, desar
 
 ---
 
-## ⚙️ Instalación y Despliegue Local
+##  Instalación y Despliegue Local
 
 Para correr este proyecto en tu máquina, necesitas tener instalado [Node.js](https://nodejs.org/) y [MongoDB](https://www.mongodb.com/).
 
