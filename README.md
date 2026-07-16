@@ -82,26 +82,32 @@ TechStore es una plataforma de comercio electrónico integral y escalable, desar
 
 ---
 
-##  Instalación y Despliegue Local
+Instalación y Despliegue Local
+1. Requisitos previos
+Node.js (v16+)
 
-### 1. Requisitos previos
-* [Node.js](https://nodejs.org/) (v16+)
-* [MongoDB](https://www.mongodb.com/) (Local o Atlas)
+MongoDB (Local o Atlas)
 
-### 2. Clonar el repositorio
-git clone [https://github.com/IgnacioRuizMcode/techstore.git](https://github.com/IgnacioRuizMcode/techstore.git)
-cd techstore 
+2. Clonar el repositorio
+Bash
+git clone https://github.com/IgnacioRuizMcode/techstore.git
+cd techstore
+3. Configuración de Variables de Entorno
+Crea un archivo .env dentro de la carpeta server/ con la siguiente información:
 
-### 3. Configuración de Variables de Entorno
-Crea un archivo .env dentro de la carpeta server/ con:
+Bash
 PORT=5000
 MONGO_URI=tu_cadena_de_conexion
 JWT_SECRET=tu_secreto_seguro
 TBK_COMMERCE_CODE=597020000540
 TBK_API_KEY_SECRET=579B532A7440BB0C9079DED94D31EA1615BACEB56610332264630D42D0A36B1C
+4. Instalación de dependencias (Script Maestro)
+Desde la carpeta raíz, ejecuta:
 
-### 4. Instalación de dependencias (Script Maestro)
+Bash
 npm run install-all
+5. Ejecución del entorno de desarrollo
+Desde la carpeta raíz, ejecuta:
 
-### 5. Ejecución del entorno de desarrollo
+Bash
 npm run dev
