@@ -104,7 +104,7 @@ Incluye autenticación segura, gestión de inventario, procesamiento de pagos me
 | Carrito Lateral | Vista de Carrito Completa |
 | :---: | :---: |
 | <img src="docs/carrito de compras.PNG" width="400" /> | <img src="docs/mi carrito de compras.PNG" width="400" /> |
-| **Resumen pedidos usuario ** | **Pasarela de Pago (Webpay)** |
+| **Resumen pedidos usuario** | **Pasarela de Pago (Webpay)** |
 | <img src="docs/resumen.PNG" width="400" /> | <img src="docs/integracion webpay.PNG" width="400" /> |
 
 ### 3. Portal de Usuario y Seguridad
