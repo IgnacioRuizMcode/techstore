@@ -7,51 +7,36 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=white)
 
-TechStore es una plataforma de comercio electrónico integral y escalable, desarrollada desde cero utilizando la pila tecnológica **MERN**. Diseñada con un enfoque "Mobile-First" y arquitectura orientada a microservicios en el backend, la aplicación ofrece una experiencia de compra fluida, integración real con pasarelas de pago y un panel de administración robusto para la gestión operativa del negocio.
+TechStore es una plataforma de comercio electrónico integral y escalable, desarrollada desde cero utilizando la pila tecnológica **MERN**. Diseñada con un enfoque "Mobile-First" y arquitectura orientada a servicios, la aplicación ofrece una experiencia de usuario optimizada, pasarela de pagos integrada y un ecosistema de gestión administrativa completo.
 
 ---
 
 ##  Propuesta de Valor y Características
 
 ###  Experiencia del Cliente (B2C)
-* **Catálogo Dinámico:** Filtrado multi-criterio (categorías, marcas, rangos de precio), búsqueda en tiempo real y ordenamiento inteligente.
-* **Carrito de Compras Persistente:** Sincronización de estado global mediante Context API, cálculo de subtotales, IVA y motor de validación de cupones de descuento.
-* **Checkout Seguro:** Integración oficial de **Transbank Webpay Plus (REST API)** para procesamiento de pagos con tarjetas de crédito y débito.
-* **Área Privada de Usuario:** 
-  * Historial de transacciones con tracking visual (timeline de despacho).
-  * Lista de deseos (Wishlist) y Centro de notificaciones.
-  * Gestión de datos personales y direcciones de envío.
+* **Catálogo Inteligente:** Filtrado multi-criterio, buscador predictivo y paginación optimizada.
+* **Carrito de Compras:** Gestión de estado global, persistencia de datos y validador de cupones de descuento en tiempo real.
+* **Checkout Seguro:** Integración oficial de **Transbank Webpay Plus (REST API)** para transacciones financieras fiables.
+* **Sistema de Notificaciones:** 
+    * **Email:** Envío automatizado para confirmación de pedidos, validación de registro y recuperación de contraseñas.
+    * **In-App:** Centro de notificaciones para estados de pedidos y alertas de sistema.
+* **Portal de Usuario:** Gestión de perfil, direcciones, lista de deseos (Wishlist) y trazabilidad completa de pedidos mediante un *timeline* logístico.
 
 ###  Panel de Administración (B2B)
-* **Dashboard Estadístico:** KPIs en tiempo real, gráficos de ventas mensuales, ingresos totales y control de usuarios activos.
-* **Gestión de Inventario (CRUD):** Sistema completo para alta, edición y baja de productos, control de stock y subida de imágenes (multipart/form-data).
-* **Logística y Despacho:** Interfaz para el avance de estados de órdenes de compra (Pendiente -> Preparación -> Enviado -> Entregado).
-* **Control de Usuarios y Roles:** Administración de cuentas de clientes y asignación de privilegios administrativos.
-* **Motor de Promociones:** Panel para crear, activar y expirar códigos de descuento personalizados.
+* **Dashboard Analítico:** Visualización de KPIs, ventas mensuales y métricas de crecimiento mediante gráficos interactivos.
+* **Gestión de Inventario (CRUD):** Administración total de productos con soporte para subida de imágenes (Middleware Multer) y control de stock en tiempo real.
+* **Logística y Procesos:** Interfaz avanzada para la actualización de estados de órdenes de compra.
+* **Gestión de Usuarios:** Control de roles, permisos y administración de perfiles de clientes.
+* **Motor de Marketing:** Creación y gestión de cupones promocionales con lógica de validación.
 
 ---
 
-##  Arquitectura y Stack Tecnológico
-
-### Frontend (Client)
-* **Core:** React 18 (construido sobre Vite para HMR ultra rápido).
-* **Enrutamiento:** React Router DOM v6 con protección de rutas (PrivateRoutes) basada en roles.
-* **Estado Global:** React Context API (AuthContext, CartContext, NotificationContext).
-* **UI/UX & Estilos:** 
-  * **Tailwind CSS:** Diseño responsivo, utilitario y soporte nativo para Modo Oscuro/Claro (Glassmorphism).
-  * **Radix UI:** Primitivas de interfaz sin estilos enfocadas en la **Accesibilidad (a11y)**.
-  * **Lucide React:** Sistema de iconografía optimizado y ligero.
-  * **Feedback UI:** Skeleton Loaders para tiempos de carga, Toasts para notificaciones y alertas interactivas.
-
-### Backend (Server)
-* **Entorno & Framework:** Node.js + Express.js siguiendo el patrón de diseño MVC (Models, Views/Routes, Controllers).
-* **Base de Datos:** MongoDB (NoSQL) orquestado a través de Mongoose ODM.
-* **Seguridad & Autenticación:** 
-  * Implementación de **JSON Web Tokens (JWT)** para manejo de sesiones sin estado.
-  * Hashing criptográfico de contraseñas con **Bcrypt.js**.
-  * Sanitización de datos y configuración estricta de CORS.
-* **Manejo de Archivos:** Middleware **Multer** para el procesamiento y almacenamiento seguro de imágenes de productos.
-* **Integraciones:** Transbank Webpay SDK (Transacciones transaccionales y Webhooks de confirmación).
+##  Funciones de Ingeniería y Seguridad
+* **Seguridad de Nivel Empresarial:** Implementación de JWT (JSON Web Tokens) para sesiones sin estado y encriptación de contraseñas con Bcrypt.js.
+* **Rutas Protegidas:** Sistema de *PrivateRoutes* con verificación de permisos basada en roles (Admin/User).
+* **UI/UX Adaptativa:** Implementación de Skeleton Loaders, estados de error, estados vacíos y feedback visual (Toasts).
+* **Validación de Datos:** Sanitización de inputs y validación de esquemas para evitar inyecciones.
+* **Patrón de Diseño:** Implementación de arquitectura MVC (Model-View-Controller) para una escalabilidad óptima.
 
 ---
 
@@ -99,9 +84,14 @@ TechStore es una plataforma de comercio electrónico integral y escalable, desar
 
 ##  Instalación y Despliegue Local
 
-Para correr este proyecto en tu máquina, necesitas tener instalado [Node.js](https://nodejs.org/) y [MongoDB](https://www.mongodb.com/).
+### 1. Requisitos previos
+* [Node.js](https://nodejs.org/) (v16+)
+* [MongoDB](https://www.mongodb.com/) (Local o Atlas)
 
-### 1. Clonar el repositorio
+### 2. Clonar el repositorio
 ```bash
 git clone [https://github.com/IgnacioRuizMcode/techstore.git](https://github.com/IgnacioRuizMcode/techstore.git)
-cd techstore
+cd techstore 
+
+### 3. Configuración de Variables de Entorno
+Crea un archivo .env dentro de la carpeta server/ con:
