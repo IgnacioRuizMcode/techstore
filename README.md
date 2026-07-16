@@ -40,6 +40,28 @@ TechStore es una plataforma de comercio electrónico integral y escalable, desar
 
 ---
 
+#  Funcionalidades Principales
+
+- Registro de usuarios.
+- Inicio de sesión.
+- Recuperación de contraseña.
+- JWT Authentication.
+- Roles de usuario.
+- CRUD de productos.
+- CRUD de usuarios.
+- CRUD de cupones.
+- CRUD de pedidos.
+- Dashboard Administrativo.
+- Wishlist.
+- Carrito Persistente.
+- Historial de compras.
+- Seguimiento de pedidos.
+- Integración con Webpay.
+- Envío automático de correos.
+- Notificaciones en tiempo real.
+- Gestión de imágenes con Multer.
+- 
+---
 ##  Interfaz de Usuario y Flujos
 
 ### 1. Inicio y Catálogo de Productos
@@ -82,13 +104,49 @@ TechStore es una plataforma de comercio electrónico integral y escalable, desar
 
 ---
 
-## Instalación y Despliegue Local
+#  Instalación
 
-### 1. Requisitos previos
-* Node.js (v16+)
-* MongoDB (Local o Atlas)
+## 1. Clonar el repositorio
 
-### 2. Clonar el repositorio
 ```bash
-git clone [https://github.com/IgnacioRuizMcode/techstore.git](https://github.com/IgnacioRuizMcode/techstore.git)
+git clone https://github.com/IgnacioRuizMcode/techstore.git
 cd techstore
+```
+
+---
+
+## 2. Variables de entorno
+
+Crear un archivo **.env** dentro de la carpeta **server**.
+
+```env
+PORT=5000
+
+MONGO_URI=tu_cadena_de_conexion
+
+JWT_SECRET=tu_secreto_seguro
+
+TBK_COMMERCE_CODE=597020000540
+
+TBK_API_KEY_SECRET=579B532A7440BB0C9079DED94D31EA1615BACEB56610332264630D42D0A36B1C
+```
+
+---
+
+## 3. Instalar dependencias
+
+Desde la carpeta raíz:
+
+```bash
+npm run install-all
+```
+
+---
+
+## 4. Ejecutar el proyecto
+
+```bash
+npm run dev
+```
+
+---
