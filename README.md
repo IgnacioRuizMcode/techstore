@@ -87,47 +87,7 @@ Incluye autenticación segura, gestión de inventario, procesamiento de pagos me
 - Postman
 - npm
 
----
 
-##  Interfaz de Usuario y Flujos
-
-### 1. Inicio y Catálogo de Productos
-| Landing Page | Ofertas Destacadas |
-| :---: | :---: |
-| <img src="docs/index.PNG" width="400" /> | <img src="docs/index2.PNG" width="400" /> |
-| **Grid de Catálogo** | **Filtros Avanzados** |
-| <img src="docs/catalogo1.PNG" width="400" /> | <img src="docs/catalogo2.PNG" width="400" /> |
-| **Vista de Producto** | **Detalle de Producto** |
-| <img src="docs/detalle producto.PNG" width="400" /> | <img src="docs/detalle producto 2.PNG" width="400" /> |
-
-### 2. E-Commerce: Carrito y Webpay
-| Carrito Lateral | Vista de Carrito Completa |
-| :---: | :---: |
-| <img src="docs/carrito de compras.PNG" width="400" /> | <img src="docs/mi carrito de compras.PNG" width="400" /> |
-| **Resumen pedidos usuario** | **Pasarela de Pago (Webpay)** |
-| <img src="docs/resumen.PNG" width="400" /> | <img src="docs/integracion webpay.PNG" width="400" /> |
-
-### 3. Portal de Usuario y Seguridad
-| Login y Autenticación | Registro de Cuenta |
-| :---: | :---: |
-| <img src="docs/login1.PNG" width="400" /> | <img src="docs/register.PNG" width="400" /> |
-| **Dashboard de Usuario** | **Ajustes de Perfil** |
-| <img src="docs/usuario 1.PNG" width="400" /> | <img src="docs/config perfil.PNG" width="400" /> |
-| **Historial de Pedidos** | **Detalle pedidos** |
-| <img src="docs/mis pedidos usuario.PNG" width="400" /> | <img src="docs/detalle mis pedidos.PNG" width="400" /> |
-| **Lista de Deseos** | **Centro de Notificaciones** |
-| <img src="docs/mis favoritos.PNG" width="400" /> | <img src="docs/notificaciones usuario.PNG" width="400" /> |
-
-### 4. Back-Office: Panel de Administración
-| Dashboard Principal | Analítica Mensual |
-| :---: | :---: |
-| <img src="docs/dashboard admin 1.PNG" width="400" /> | <img src="docs/ventas mensual.PNG" width="400" /> |
-| **Inventario de Productos** | **Agregar Producto** |
-| <img src="docs/productos admin 1.PNG" width="400" /> | <img src="docs/agregar producto admin.PNG" width="400" /> |
-| **Gestión de Órdenes** | **Administración de Usuarios** |
-| <img src="docs/pedidos admin.PNG" width="400" /> | <img src="docs/usuarios admin 1.PNG" width="400" /> |
-| **Monitor de Cupones** | **Generador de Descuentos** |
-| <img src="docs/cupones 1.PNG" width="400" /> | <img src="docs/crear cupon.PNG" width="400" /> |
 
 ---
 
